@@ -80,7 +80,6 @@ public class MotoController {
 
 	}
 
-
 	@GetMapping("/findAll")
 	public ResponseEntity<List<Moto>> findAll(){
 		try {
@@ -132,6 +131,7 @@ public class MotoController {
 		}
 
 	}
+	
 	@GetMapping("/findAcimaAno")
 	public ResponseEntity<List<Moto>> findAcimaAno(@RequestParam int ano){
 		try {
