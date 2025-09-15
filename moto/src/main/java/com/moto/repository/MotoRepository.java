@@ -9,7 +9,7 @@ import com.moto.entity.Moto;
 
 public interface MotoRepository extends JpaRepository<Moto, Long> {
 	
-	public List<Moto> findByNome (String nome); // findBy é reservado, tem que começar assim + nome da variavel ou obj com 1ªletra maiúscula, depois implementa na service e controller
+	public List<Moto> findByNome (String nome); //findBy é reservado, tem que começar assim + nome da variavel ou obj com 1ªletra maiúscula, depois implementa na service e controller
 	
 	public List<Moto> findByMarca (Marca marca);
 	

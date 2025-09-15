@@ -52,7 +52,7 @@ public class MotoController {
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<String> deleteById(@PathVariable Long id) { //passar apenas o id na url
+	public ResponseEntity<String> deleteById(@PathVariable Long id) { //passar apenas o id/número na url
 		try {
 			String msg = this.motoService.deleteById(id);
 			return new ResponseEntity<String>(msg, HttpStatus.OK);
